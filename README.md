@@ -1,6 +1,6 @@
 # Terraform IoT Edge Device Registration
 
-This project uses Terraform to manage the identity of an IoT Edge device in Azure. It utilizes the `shell` provider to execute a shell script that interacts with the Azure CLI (`az`).
+This module uses Terraform to manage the identity of an IoT Edge device in Azure. It utilizes the `shell` provider to execute a shell script that interacts with the Azure CLI (`az`).
 
 ## Project Structure
 
