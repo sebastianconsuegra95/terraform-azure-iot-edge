@@ -5,7 +5,7 @@ This module uses Terraform to manage the identity of an IoT Edge device in Azure
 ## Project Structure
 
 - `main.tf`: Terraform configuration file defining the `shell_script` resource to manage the IoT Edge device.
-- `modules/terraform-iot-edge-device/scripts/register_iot_edge_device.sh`: Shell script that performs create, read, and delete operations for the IoT Edge device identity.
+- `/scripts/register_iot_edge_device.sh`: Shell script that performs create, read, and delete operations for the IoT Edge device identity.
 
 ## Requirements
 
