@@ -1,11 +1,14 @@
 variable "resource_group_name" {
-  type = string
+  description = "Name of resoruce group"
+  type        = string
 }
 
 variable "iot_hub_name" {
-  type = string
+  description = "Name of IoT Hub instance"
+  type        = string
 }
 
 variable "iot_edge_device_name" {
-  type = string
+  description = "Name of IoT Edge Device"
+  type        = string
 }
