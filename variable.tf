@@ -12,3 +12,9 @@ variable "iot_edge_device_name" {
   description = "Name of IoT Edge Device"
   type        = string
 }
+
+variable "modules_content_file" {
+  description = "File of Module Content"
+  type        = string
+  default     = null
+}

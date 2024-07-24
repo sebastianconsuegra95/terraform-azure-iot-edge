@@ -1,0 +1,12 @@
+{
+    "content": {
+        "modulesContent": {
+            "$edgeAgent": {
+                "properties.desired": {}
+            },
+            "$edgeHub": {
+                "properties.desired": {}
+            }
+        }
+    }
+}
