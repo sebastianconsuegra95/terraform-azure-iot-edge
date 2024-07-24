@@ -40,6 +40,9 @@ resource "shell_script" "set_iot_edge_modules" {
     RESOURCE_GROUP       = var.resource_group_name
     IOT_EDGE_DEVICE_NAME = var.iot_edge_device_name
     MODULES_CONTENT_FILE = var.modules_content_file
-    SCRIPT               = "./scripts/set_iot_edge_device.sh"
+    SCRIPT               = "./scripts/set_iot_edge_modules.sh"
+  }
+  triggers = {
+    when_value_changed= shell_script.register_iot_edge_device.output["connectionString"]
   }
 }

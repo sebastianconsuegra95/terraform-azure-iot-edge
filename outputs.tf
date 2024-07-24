@@ -17,3 +17,8 @@ output "iot_hub_name" {
   description = "Name of IoT Hub instance"
   value       = var.iot_hub_name
 }
+
+output "iot_edge_modules" {
+  description = "List of IoT Edge Modules"
+  value       = shell_script.set_iot_edge_modules[0].output["modules"]
+}
