@@ -1,0 +1,22 @@
+{
+    "content": {
+        "modulesContent": {
+            "$edgeAgent": {
+                "properties.desired": {}
+            },
+            "$edgeHub": {
+                "properties.desired": {
+                    "routes": {
+                        "SimulatedTemperatureSensorToIoTHub": "FROM /messages/modules/SimulatedTemperatureSensor/* INTO $upstream"
+                    }
+                }
+            },
+            "SimulatedTemperatureSensor": {
+                "properties.desired": {
+                    "SendData": true,
+                    "SendInterval": 5
+                }
+            }
+        }
+    }
+}
