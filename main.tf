@@ -26,7 +26,6 @@ resource "shell_script" "register_iot_edge_device" {
     SCRIPT               = "${path.module}/scripts/register_iot_edge_device.sh"
   }
 
-  working_directory = path.module
 }
 
 resource "shell_script" "set_iot_edge_modules" {
@@ -45,8 +44,6 @@ resource "shell_script" "set_iot_edge_modules" {
     SCRIPT               = "${path.module}/scripts/set_iot_edge_modules.sh"
     EMPTY_CONTENT_FILE   = "${path.module}/scripts/emptyModulesContent.json"
   }
-
-  working_directory = path.module
 
   triggers = {
     when_value_changed = shell_script.register_iot_edge_device.output["connectionString"]
